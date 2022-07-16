@@ -1,9 +1,5 @@
 /*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 */
-html{
-    scroll-behavior: smooth;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -629,32 +625,4 @@ button[type="submit"]:hover {
         flex-basis: 100%;
         font-size: 14px;
     }
-}
-
-/*-----------------------------------------------top down button----------------------------------------------------*/
-
-.scroll{
-    position: fixed;
-    top: 50%;
-    right: 0;
-    width: 80px;
-    height: 80px;
-    display: block;
-    background: #000;
-    text-align: center;
-    line-height: 80px;
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    z-index: 10000;
-}
-
-.scroll.top{
-    top: calc(50% - 80px);
-    background: #019587;
-}
-
-.scroll.bottom{
-    top: calc(50% - 0);
-    background:#f44336;
 }
