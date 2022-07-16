@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>
+            Resturant Website
+        </title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="style1.css"/>
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <!------------------------------------------------top down button------------------------------------------>
+
+        <a href="#" class="scroll top">Top</a>
+        <a href="#finish" class="scroll bottom">Bottom</a>
+
+        <section id="homes">
+            <section class="sub-header">
+                <nav>
+                    <img src="logo.png">
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="reviews.html">Review</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </nav>
+            </section>
+
+            <div class="container">
+                <div class="form">
+                    <div class="contact-info">
+                        <h3 class="title">Let's get in touch</h3>
+                        <div class="info">
+                            <div class="information">
+                                <p>#30 xyz colony, xyz City In
+                                    <i class="fa fa-map-marker"></i>
+                                </p>
+                            </div>
+                            <div class="information">
+                                <p>example@website.com
+                                    <i class="fa fa-paper-plane"></i>
+                                </p>
+                            </div>
+                            <div class="information">
+                                <p>+91 7044144221
+                                    <i class="fa fa-phone"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="social-media">
+                            <p>Connect with us :</p>
+                            <div class="social-icons">
+                                <a href="#">
+                                    <i class="fa fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <span class="circle one"></span>
+                        <span class="circle two"></span>
+
+                        <form id="Feedback-Form" method="POST" action="https://formspree.io/f/xyyoqrea">
+                            <h3 class="title">Booking Form</h3>
+                            <div class="input-group">
+                                <input type="text" class="input" name="User Name">
+                                <label for="name">Username</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" class="input" name="Email ID">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="tel" class="input" name="Phone Number" pattern="[0-9]{5}-[0-9]{5}">
+                                <label for="number">Phone Number [Format: 12345-67890]</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="datetime-local" class="input" name="Booking Date">
+                                <label for="Booking Date">Booking Date</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="number" class="input" name="Seat Number" min="1" max="8">
+                                <label for="Seat number">Seat Number</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="number" class="input" name="Seating Area" min="1" max="4">
+                                <label for="Seating Area">Seating Area</label><br><br>
+                                <small>1.Dining Tables<br>2.Outdoor Tables<br>3.Roof Tops<br>4.Couple Seating
+                                </small>
+                            </div>
+                            <input type="submit" value="Send" class="btn">
+                            <input type="reset" value="Reset" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="status"></div>
+            <script type="text/javascript" src="script1.js"></script>
+
+            <!------------------------------------------contact section ends--------------------------------------->
+
+            <div class="credits">
+                created by @<span>miss Mousumi Dutta</span>
+                | all rights reserved
+            </div>
+
+            <!------------------------------------ Javascript for toggle menu ------------------------------------->
+            <script>
+                var navLinks = document.getElementById("navLinks");
+
+                function showMenu() {
+                    navLinks.style.right = "0";
+                }
+
+                function hideMenu() {
+                    navLinks.style.right = "-200px";
+                }
+            </script>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+        </section>
+
+        <!------------------------------------------------down scroll finish--------------------------------------->
+        <div id="finish"></div>
+
+    </body>
+</html>
