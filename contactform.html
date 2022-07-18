@@ -77,37 +77,37 @@
                         </div>
                     </div>
 
-                    <div class="contact-form">
+                     <div class="contact-form">
                         <span class="circle one"></span>
                         <span class="circle two"></span>
 
                         <form id="Feedback-Form" method="POST" action="https://formspree.io/f/xyyoqrea">
                             <h3 class="title">Booking Form</h3>
                             <div class="input-group">
-                                <input type="text" class="input" name="User Name">
                                 <label for="name">Username</label>
+                                <input type="text" class="input" name="User Name">
                             </div>
                             <div class="input-group">
-                                <input type="email" class="input" name="Email ID">
                                 <label for="email">Email</label>
+                                <input type="email" class="input" name="Email ID">
                             </div>
                             <div class="input-group">
-                                <input type="tel" class="input" name="Phone Number" pattern="[0-9]{5}">
                                 <label for="number">Phone Number [Format: 1234567890]</label>
+                                <input type="tel" class="input" name="Phone Number" pattern="[0-9]{10}">
                             </div>
                             <div class="input-group">
-                                <input type="datetime-local" class="input" name="Booking Date">
                                 <label for="Booking Date">Booking Date</label>
+                                <input type="datetime-local" class="input" name="Booking Date">
                             </div>
                             <div class="input-group">
-                                <input type="number" class="input" name="Seat Number" min="1" max="8">
                                 <label for="Seat number">Seat Number</label>
+                                <input type="number" class="input" name="Seat Number" min="1" max="8">
                             </div>
                             <div class="input-group">
-                                <input type="number" class="input" name="Seating Area" min="1" max="4">
-                                <label for="Seating Area">Seating Area</label><br><br>
+                                <label for="Seating Area">Seating Area</label><br>
                                 <small>1.Dining Tables<br>2.Outdoor Tables<br>3.Roof Tops<br>4.Couple Seating
                                 </small>
+                                <input type="number" class="input" name="Seating Area" min="1" max="4">
                             </div>
                             <input type="submit" value="Send" class="btn">
                             <input type="reset" value="Reset" class="btn">
