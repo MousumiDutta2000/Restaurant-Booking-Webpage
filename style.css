@@ -389,7 +389,7 @@ h1::after {
     }
 }
 
-/*-----------------------------------------------online delivery--------------------------------------------------*/
+/*-----------------------------------------------online booking--------------------------------------------------*/
 
 .cta {
     margin: 100px auto;
@@ -517,7 +517,7 @@ h1::after {
 
 .feedback-form {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.15), #3551b5), url(Image/book.jpg);
     background-position: center;
     background-size: cover;
